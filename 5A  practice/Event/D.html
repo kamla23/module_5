@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    const body = document.body;
+    const div = docuemnt.createElement("div");
+    div.className = "container";
+    document.body.appendChild(div);
+
+    const heading = document.createElement("h1");
+    heading.innerText = "Hello kamla";
+    heading.textContent = "welcome to DOM Practice";
+    heading.innerHTML = "<span style='color:blue'>Dynamic heading</span>";
+    div.appendChild(heading);
+</script>
+</body>
+</html>

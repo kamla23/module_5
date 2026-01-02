@@ -1,0 +1,25 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inline onchange Example</title>
+</head>
+<body>
+
+  <label for="fruits">Choose a fruit:</label>
+  <select onchange="showFruit(this.value)">
+    <option value="">--Select--</option>
+    <option value="Mango">Mango</option>
+    <option value="Banana">Banana</option>
+    <option value="Apple">Apple</option>
+  </select>
+
+  <script>
+    function showFruit(fruit) {
+      alert("You selected: " + fruit);
+    }
+  </script>
+
+</body>
+</html>

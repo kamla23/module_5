@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo">
+    Hello <span style="display:none;">Hidden Text</span> World!
+  </div>
+
+  <button onclick="checkInnerHTML()">innerHTML</button>
+  <button onclick="checkTextContent()">textContent</button>
+  <button onclick="checkInnerText()">innerText</button>
+
+  <p id="output"></p>
+  <script>
+    function checkInnerHTML() {
+      const data = document.getElementById("demo").innerHTML;
+      document.getElementById("output").textContent = "innerHTML: " + data;
+    }
+
+    function checkTextContent() {
+      const data = document.getElementById("demo").textContent;
+      document.getElementById("output").textContent = "textContent: " + data;
+    }
+
+    function checkInnerText() {
+      const data = document.getElementById("demo").innerText;
+      document.getElementById("output").textContent = "innerText: " + data;
+    }
+  </script>
+</body>
+</html>
+
+
+callstack//=======================
+
+call cb

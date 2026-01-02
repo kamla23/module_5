@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>DOM Practice Task</h2>
+
+  <div id="myDiv">
+    Hello <span style="display: none;">World</span>
+  </div>
+
+  <button onclick="showContent()">Show Content</button>
+
+  <p><strong>textContent:</strong> <span id="textC"></span></p>
+  <p><strong>innerText:</strong> <span id="innerT"></span></p>
+  <p><strong>innerHTML:</strong> <span id="innerH"></span></p>
+
+  <script>
+    function showContent() {
+      const myDiv = document.getElementById("myDiv");
+
+      document.getElementById("textC").textContent = myDiv.textContent;
+      document.getElementById("innerT").textContent = myDiv.innerText;
+      document.getElementById("innerH").textContent = myDiv.innerHTML;
+    }
+  </script>
+</body>
+</html>
